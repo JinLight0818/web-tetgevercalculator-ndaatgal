@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Нэрийн дансны үр дүн тооцоолуур</title>
+</head>
+<body>
+
+<!-- Calculator B -->
+<div class="calculator" id="calculatorB">
+    <h2>Сард төлвөл зохих шимтгэлийн хэмжээ тооцоолуур</h2>
+    <form id="calculatorFormB">
+        <label for="g">Даатгуулагчийн сарын хөдөлмөр хөлсний дундаж хэмжээ:</label>
+        <input type="number" id="g" placeholder="Даатгуулагчийн сарын хөдөлмөр" required>
+
+        <label for="d">Сүүлийн 5 жилийн улсын дундаж хөдөлмөрийн хөлсний дундаж индекс:</label>
+        <input type="number" id="d" placeholder="Сүүлийн 5 жилийн индекс" required>
+
+        <label for="e">Шимтгэлийн хувь:</label>
+        <input type="number" id="e" placeholder="Шимтгэлийн хувь" required>
+
+        <button type="button" onclick="calculateResultB()">Үр дүн тооцоолох</button>
+    </form>
+
+    <h3>Үр дүн (Б):</h3>
+    <p id="resultB"></p>
+</div>
+
+<!-- Calculator A -->
+<div class="calculator" id="calculatorA">
+    <h2>Нэрийн дансны тухайн жилийн эхний үлдэгдэл тооцоолуур</h2>
+    <form id="calculatorFormA">
+        <label for="b">Сард төлвөл зохих шимтгэлийн хэмжээ:</label>
+        <input type="number" id="b" placeholder="Сарын шимтгэл" required>
+
+        <label for="c">Ажилласан нийт сар:</label>
+        <input type="number" id="c" placeholder="Ажилласан сар" required>
+
+        <button type="button" onclick="calculateResultA()">Үр дүн тооцоолох</button>
+    </form>
+
+    <h3>Үр дүн (А):</h3>
+    <p id="resultA"></p>
+</div>
+
+<!-- Calculator C -->
+<div class="calculator" id="calculatorC">
+    <h2>Нэрийн дансны үр дүн тооцоолуур</h2>
+    <form id="calculatorFormC">
+        <label for="ndc1">Нэрийн дансны тухайн жилийн эхний үлдэгдэл:</label>
+        <input type="number" id="ndc1" required>
+
+        <label for="m">Мөнгөжүүлсэн орлого:</label>
+        <input type="number" id="m" required>
+
+        <label for="bsho">Тухайн жилийн бүртгэсэн шимтгэлийн орлого:</label>
+        <input type="number" id="bsho" required>
+
+        <label for="ho">Нэрийн дансны эхний үлдэгдлээс мөнгөжүүлсэн орлогыг хассан дүн:</label>
+        <input type="number" id="ho" required>
+
+        <button type="button" onclick="calculateResultC()">Үр дүн тооцоолох</button>
+    </form>
+
+    <h3>Үр дүн:</h3>
+    <p id="resultC"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
